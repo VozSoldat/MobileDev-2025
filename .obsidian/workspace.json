@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "d510ffa57a9babff",
+    "type": "split",
+    "children": [
+      {
+        "id": "233cc9391d8e6485",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab5c9e2dec313567",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 - Pengantar 2/laporan/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "03ffb124d03780c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "a945f60f496c1f55",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9fbf0053bbd4932",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8c3f2a5abc67daa6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0246fe11faabf4f3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fa1fbcc6b13e9c73",
+    "type": "split",
+    "children": [
+      {
+        "id": "d58821bb3d03b9a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32409a709ecb70ca",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3 - Pengantar 2/laporan/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
+            }
+          },
+          {
+            "id": "bc6046a2d8773813",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3 - Pengantar 2/laporan/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
+            }
+          },
+          {
+            "id": "5bf4cdd4d0324178",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f046c7bc8517c609",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "3 - Pengantar 2/laporan/README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "ab5c9e2dec313567",
+  "lastOpenFiles": [
+    "3 - Pengantar 2/laporan/attachments/Pasted image 20250910143746.png",
+    "3 - Pengantar 2/laporan/attachments/Pasted image 20250910143358.png",
+    "3 - Pengantar 2/laporan/attachments/Pasted image 20250910142550.png",
+    "3 - Pengantar 2/laporan/attachments/Pasted image 20250910142047.png",
+    "3 - Pengantar 2/laporan/attachments/Pasted image 20250910141850.png",
+    "3 - Pengantar 2/laporan/attachments/Pasted image 20250910141535.png",
+    "3 - Pengantar 2/laporan/attachments/Pasted image 20250910141614.png",
+    "3 - Pengantar 2/laporan/README.md",
+    "3 - Pengantar 2/laporan/attachments",
+    "3 - Pengantar 2/laporan/attachments/image.png",
+    "MobileDev-2025/3.md",
+    "MobileDev-2025"
+  ]
+}
