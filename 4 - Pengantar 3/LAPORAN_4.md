@@ -121,3 +121,118 @@ Kode ini menunjukkan cara memberi nilai sebuah Record.
 ![](attachments/Pasted%20image%2020251002000041.png)
 
 Pemanggilan nilai Record dengan tanda `$` berguna untuk memanggil berdasarkan indeks. Kita juga dapat memanggil elemen Record dengan key-nya langsung.
+
+## Tugas
+### Soal
+1. Silakan selesaikan Praktikum 1 sampai 5, lalu dokumentasikan berupa screenshot hasil pekerjaan Anda beserta penjelasannya!
+2. Jelaskan yang dimaksud Functions dalam bahasa Dart!
+3. Jelaskan jenis-jenis parameter di Functions beserta contoh sintaksnya!
+4. Jelaskan maksud Functions sebagai first-class objects beserta contoh sintaknya!
+5. Apa itu Anonymous Functions? Jelaskan dan berikan contohnya!
+6. Jelaskan perbedaan Lexical scope dan Lexical closures! Berikan contohnya!
+7. Jelaskan dengan contoh cara membuat return multiple value di Functions!
+
+### Jawaban
+1. ✅
+2. Function merupakan blok atau unit yang berfungsi mengelompokkan kode-kode yang memiliki suatu kegunaan. Function dapat memiliki nilai kembalian (return) maupun tidak. Function juga dapat menerima argumen melalui parameter.
+3. Dart mendukung beberapa jenis parameter:
+	1. Positional parameter
+		```Dart
+		void tambah(int a, int b) {
+			print(a + b);
+		}
+		
+		void main() {
+			tambah(5, 3); // Output: 8
+		}
+		```
+	
+	2.  Optional positional parameter 
+		```Dart
+		void salam([String nama = "Teman"]) {   print("Halo, $nama!"); }
+		void main() {   salam();        // Output: Halo, Teman!   salam("Erril"); // Output: Halo, Erril! }
+		```
+	
+	3. Named parameter
+		```dart
+		void info({required String nama, int umur = 0}) {
+			print("Nama: $nama, Umur: $umur");
+		}
+		
+		void main() {
+			info(nama: "Erril", umur: 21); // Output: Nama: Erril, Umur: 21
+			info(nama: "Luna");            // Output: Nama: Luna, Umur: 0
+		}
+		```
+
+4. Dart, fungsi diperlakukan seperti objek, yakni bisa disimpan ke variabel, dijadikan parameter fungsi lain, atau dikembalikan sebagai return value.
+	 
+	Contoh:
+	```dart
+	// Fungsi disimpan dalam variabel
+	var kali = (int a, int b) => a * b;
+	
+	void main() {
+	  print(kali(4, 5)); // Output: 20
+	
+	  // Fungsi sebagai parameter
+	  hitung(3, 4, kali); // Output: 12
+	}
+	
+	void hitung(int x, int y, Function operasi) {
+	  print(operasi(x, y));
+	}
+	
+	```
+
+5. Anonymous Functions
+	- Anonymous function adalah fungsi tanpa nama. Biasanya digunakan saat fungsi hanya dipakai sekali atau sebagai parameter.
+	- Biasanya ditulis dengan `()=>` (expression body) atau `(){}` (block body).
+	- Bisa juga disebut dengan "Lambda function".
+
+6. Perbedaan Lexical Scope dan Lexical Closures
+	1. Lexical Scope: Variabel hanya bisa diakses di dalam blok/konteks tempat ia didefinisikan.
+		```dart
+		void main() {
+		  var nama = "Erril";
+		
+		  void sapa() {
+		    print("Halo, $nama"); // Bisa akses karena dalam lexical scope
+		  }
+		
+		  sapa(); // Output: Halo, Erril
+		}
+		```
+
+	2. Lexical Closure: Fungsi dapat menangkap (capture) variabel dari lingkup luar, lalu tetap mengingat nilainya meskipun konteks aslinya sudah selesai.
+		```dart
+		Function counter() {
+		  int hitung = 0;
+		  return () {
+		    hitung++;
+		    return hitung;
+		  };
+		}
+		
+		void main() {
+		  var tambah = counter();
+		  print(tambah()); // Output: 1
+		  print(tambah()); // Output: 2
+		  print(tambah()); // Output: 3
+		}
+		
+		```
+
+7. Dart multiple return bisa dilakukan dengan  cara:
+	```dart
+	// Function dengan return record
+	(int hasil, int sisa) bagi(int a, int b) {
+	  return (a ~/ b, a % b);
+	}
+	
+	void main() {
+	  var (hasil, sisa) = bagi(10, 3); // destructuring record
+	  print("Hasil: $hasil, Sisa: $sisa");
+	}
+	
+	```
