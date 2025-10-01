@@ -24,3 +24,20 @@ Kode di atas berguna untuk membuat sebuah list dengan panjang tertentu dengan ni
 ![](attachments/Pasted%20image%2020251001230023.png)
 
 ## Praktikum 2: Tipe Data Set
+
+### Langkah 1--2
+
+Variabel halogens diisi dengan nilai-nilai dalam kurung kurawal akan diinfer menjadi `Set`. 
+
+![](attachments/Pasted%20image%2020251001230419.png)
+
+### Langkah 3
+
+Kode tersebut menginisialisasi tiga variabel. Variabel pertama `names1` merupakan `Set` dengan nilai elemen di dalamnya harus bertipe `String`. Variabel kedua `names2` merupakan `Set` dengan nilai elemen `String`; cara kedua selain yang pertama. Variabel ketiga `names3` di-infer menjadi `Map` karena Dart menganggap variabel dengan assignment dengan nilai kurung kurawal yang kosong sebagai `Map` jika tidak diikuti dengan pendefinisian tipe pada *Type parameter*-nya (simbol `<` + `>`).
+
+![](attachments/Pasted%20image%2020251001230621.png)
+---
+
+Penggunaan `.add()` dan `.addAll()`. Fungsi pertama bekerja dengan menambahkan argumen ke dalam set pada bagian paling terakhir. Fungsi kedua bekerja mirip, tetapi untuk objek `Iteratable` (seperti `List`, `Set` dan lainnya).
+ 
+![](attachments/Pasted%20image%2020251001231226.png)

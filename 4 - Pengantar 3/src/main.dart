@@ -1,13 +1,13 @@
 main() {
-  final List list = new List.filled(5, null);
-  // assert(list.length == 3);
-  // assert(list[1] == 2);
-  print(list.length);
-  print(list[1]);
+  var names1 = <String>{};
+  Set<String> names2 = {}; // This works, too.
 
-  list[0] = "Muhammad Erril";
-  list[1] = "2341720183";
-  // assert(list[1] == 1);
-  print(list[0]);
-  print(list[1]);
+  names1.add("Muhammad Erril");
+  names1.add("2341720183");
+
+
+  names2.addAll(["Muhammad Erril", "2341720183"]);
+
+  print(names1);
+  print(names2);
 }
