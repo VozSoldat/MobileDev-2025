@@ -1,32 +1,29 @@
 main() {
-  var mhs1 = Map<String, String>();
-  mhs1.putIfAbsent('nama', () => 'Muhammad Erril');
-  mhs1.putIfAbsent('nim', () => '2341720183');
+  var list1 = [1, 2, null];
+  print(list1);
+  var list3 = [0, ...?list1];
+  print(list3.length);
 
+  var nimKu = <String>{'2341720183'};
+  var nims = <String>{...nimKu};
+  print(nims);
 
-  Map gifts = Map();
-  gifts['first'] = 'partridge';
-  gifts['second'] = 'turtledoves';
-  gifts['fifth'] = 'golden rings';
-  gifts['nama'] = 'Muhammad Erril';
-  gifts['nim'] = '2341720183';
+  bool promoActive = false;
+  var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
+  print(nav);
 
+  var login = 'Admin';
+  var nav2 = [
+    'Home',
+    'Furniture',
+    'Plants',
+    if (login case 'Manager') 'Inventory',
+    if (login case 'Admin') 'User Management',
+  ];
+  print(nav2);
 
-  var mhs2 = Map<int, String>();
-  mhs2[1] = 'Muhammad Erril';
-  mhs2[2] = '2341720183';
-
-
-  Map nobleGases = Map();
-  nobleGases[2] = 'helium';
-  nobleGases[10] = 'neon';
-  nobleGases[18] = 'argon';
-
-  nobleGases[3] = 'Muhammad Erril';
-  nobleGases[4] = '2341720183';
-
-  print(mhs1);
-  print(gifts);
-  print(mhs2);
-  print(nobleGases);
+  var listOfInts = [1, 2, 3];
+  var listOfStrings = ['#0', for (var i in listOfInts) '#$i'];
+  assert(listOfStrings[1] == '#1');
+  print(listOfStrings);
 }

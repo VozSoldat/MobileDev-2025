@@ -59,3 +59,38 @@ Kode di bawah menambahkan elemen baru berupa pasangan key dan value.
 
 ### Langkah 1--2
 
+Kode ini membuat dua list. Pada list kedua, `...` digunakan untuk memasukkan argumen bernilai list pada parameter yang menerima elemen-elemen list. Simbol itu disebut *spread operator*.
+
+![](attachments/Pasted%20image%2020251001232839.png)
+
+### Langkah 3
+
+Membuat list yang berisi nim dan menambahkannya ke list lain dengan spread operator.
+
+![](attachments/Pasted%20image%2020251001233909.png)
+
+### Langkah 4
+
+Ketika `promoActive` bernilai true.
+![](attachments/Pasted%20image%2020251001234053.png)
+---
+
+Ketika `promoActive` bernilai false. Nilai 'outlet' tidak ikut dimasukkan ke dalam list. Ini adalah ekspresi control-flow.
+![](attachments/Pasted%20image%2020251001234113.png)
+
+### Langkah 5
+
+Jika nilai login bukan 'Manager', maka nilai 'Inventory' tidak dimasukkan ke dalam list
+
+![](attachments/Pasted%20image%2020251001234259.png)
+---
+
+Misalnya diberi kondisi lain, selama kondisi terpenuhi, makan nilai yang ditulis pada pengondisian akan dimasukkan ke list.
+
+![](attachments/Pasted%20image%2020251001234420.png)
+
+### Langkah 6
+
+Kita juga dapat memasukkan `for` sebagai pembantu operator untuk memasukkan nilai ke dalam list. Pada contoh kode, kita dapat memasukkan nilai berulang langsung di dalam kurung kotak, tanpa perlu membuat sebuah block code untuk `for`. 
+
+![](attachments/Pasted%20image%2020251001234602.png)
