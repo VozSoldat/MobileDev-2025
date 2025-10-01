@@ -41,3 +41,21 @@ Kode tersebut menginisialisasi tiga variabel. Variabel pertama `names1` merupaka
 Penggunaan `.add()` dan `.addAll()`. Fungsi pertama bekerja dengan menambahkan argumen ke dalam set pada bagian paling terakhir. Fungsi kedua bekerja mirip, tetapi untuk objek `Iteratable` (seperti `List`, `Set` dan lainnya).
  
 ![](attachments/Pasted%20image%2020251001231226.png)
+
+## Praktikum 3: Tipe Data Map
+
+### Langkah 1--2
+
+Kode tersebut membuat sebuah variabel yang di-infer ke `Map`. Map adalah tipe struktur-data yang berbentuk `key`-`value`. Bentuk struktur `key`-`value` data Map sama seperti objek-objek JSON ataupun YAML.
+
+![](attachments/Pasted%20image%2020251001231630.png)
+
+### Langkah 3
+
+Kode di bawah menambahkan elemen baru berupa pasangan key dan value. 
+
+![](attachments/Pasted%20image%2020251001232454.png)
+## Praktikum 4: Tipe Data List: Spread dan Control-flow Operators
+
+### Langkah 1--2
+
