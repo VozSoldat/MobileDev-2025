@@ -1,4 +1,4 @@
-# Laporan Praktikum Pertemuan 5
+# Laporan Praktikum 5
 
 - Nama: Muhammad Erril Putra Pratidina
 - NIM: 2341720183
@@ -37,25 +37,25 @@ Selain teks, kita juga dapat memasukkan gambar pada widget.
 
 Kita dapat menggunakan *scaffold widget*, yakni widget yang dapat kita atur formatnya. Pada contoh di bawah, angka yang dikandung dalam widget memiliki format tebal (headline).
 
-![](attachments/Screenshot%20(22).png)
+![](attachments/Pasted%20image%2020251001222745.png)
 
 ### Dialog widget
 
 Kita juga dapat menggunakan widget untuk menampilkan dialog atau alert seperti gambar di bawah.
 
-![](attachments/Screenshot%20(21).png)
+![](attachments/Pasted%20image%2020251001223215.png)
 
 ### Input and selection widget
 
 Terdapat juga widget yang berisi field input dan selection.
 
-![](attachments/Screenshot%20(23).png)
+![](attachments/Pasted%20image%2020251001223339.png)
 
 ### Date and time pickers
 
 Terdapat pula *date and time pickers* untuk memilih tanggal.
 
-![](attachments/Screenshot%20(24).png)
+![](attachments/Pasted%20image%2020251001223436.png)
 
 
 

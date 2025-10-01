@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5-AplikasiPertama/LAPORAN.md.md",
+                "file": "5-AplikasiPertama/LAPORAN_5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LAPORAN.md"
+              "title": "LAPORAN_5"
             }
           }
         ]
@@ -171,32 +171,32 @@
   },
   "active": "ab5c9e2dec313567",
   "lastOpenFiles": [
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/flutter/release",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/kernel_blob.bin.jar",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/isolate_snapshot_data.jar",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/fonts/MaterialIcons-Regular.otf.jar",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf.jar",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/assets/logo_polinema.png.jar",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/packages/cupertino_icons/assets",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/packages/cupertino_icons",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/shaders",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/fonts",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/compressed_assets/debug/compressDebugAssets/out/assets/flutter_assets/packages",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/debug/packageDebugResources/mipmap-xxxhdpi-v4/ic_launcher.png",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/debug/packageDebugResources/mipmap-xxhdpi-v4/ic_launcher.png",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/debug/packageDebugResources/mipmap-xhdpi-v4/ic_launcher.png",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/debug/packageDebugResources/mipmap-mdpi-v4/ic_launcher.png",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/debug/packageDebugResources/mipmap-hdpi-v4/ic_launcher.png",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/assets/logo_polinema.png",
-    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/flutter/debug/flutter_assets/assets/logo_polinema.png",
-    "5-AplikasiPertama/attachments/Screenshot (24).png",
-    "5-AplikasiPertama/attachments/Screenshot (23).png",
-    "5-AplikasiPertama/attachments/Screenshot (21).png",
+    "5-AplikasiPertama/LAPORAN_4.md.md",
+    "5-AplikasiPertama/attachments/Pasted image 20251001223436.png",
+    "5-AplikasiPertama/flutter_application_1/lib/main.dart",
+    "5-AplikasiPertama/attachments/Pasted image 20251001223339.png",
+    "5-AplikasiPertama/attachments/Pasted image 20251001223215.png",
+    "5-AplikasiPertama/attachments/Pasted image 20251001222745.png",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/shrunk_resources_proto_format/release/minifyReleaseWithR8/shrunk-resources-proto-format-release.ap_",
+    "5-AplikasiPertama/flutter_application_1/build/app/outputs/mapping/release/resources.txt",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/r8_metadata/release/minifyReleaseWithR8/r8-metadata.dat",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/merged_java_res/release/minifyReleaseWithR8/base.jar",
+    "5-AplikasiPertama/flutter_application_1/build/app/outputs/mapping/release/configuration.txt",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/r8_art_profile/release/minifyReleaseWithR8/baseline-prof.txt",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex",
+    "5-AplikasiPertama/flutter_application_1/build/app/outputs/mapping/release/mapping.txt",
+    "5-AplikasiPertama/flutter_application_1/build/app/outputs/flutter-apk/app-debug.apk.sha1",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/release/packageReleaseResources/mipmap-xxxhdpi-v4/ic_launcher.png",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/release/packageReleaseResources/mipmap-xxhdpi-v4/ic_launcher.png",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/release/packageReleaseResources/mipmap-xhdpi-v4/ic_launcher.png",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/release/packageReleaseResources/mipmap-mdpi-v4/ic_launcher.png",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/packaged_res/release/packageReleaseResources/mipmap-hdpi-v4/ic_launcher.png",
+    "5-AplikasiPertama/flutter_application_1/build/app/intermediates/merged-not-compiled-resources/release/mipmap-xxxhdpi-v4/ic_launcher.png",
     "3 - Pengantar 2/laporan/README.md",
     "Aplikasi/LAPORAN.md.md",
     "5-AplikasiPertama/flutter_application_1/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md",
     "5-AplikasiPertama/flutter_application_1/README.md",
-    "5-AplikasiPertama/LAPORAN.md.md",
+    "5-AplikasiPertama/LAPORAN_5.md",
     "MobileDev-2025/3.md"
   ]
 }
