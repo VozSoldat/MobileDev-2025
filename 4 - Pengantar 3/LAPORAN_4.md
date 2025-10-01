@@ -94,3 +94,30 @@ Misalnya diberi kondisi lain, selama kondisi terpenuhi, makan nilai yang ditulis
 Kita juga dapat memasukkan `for` sebagai pembantu operator untuk memasukkan nilai ke dalam list. Pada contoh kode, kita dapat memasukkan nilai berulang langsung di dalam kurung kotak, tanpa perlu membuat sebuah block code untuk `for`. 
 
 ![](attachments/Pasted%20image%2020251001234602.png)
+## Praktikum 5: Record
+
+### Langkah 1--2
+
+Variabel yang di-infer ke `Record` ini mengandung nilai elemen yang berbeda-beda tipenya. Manfaat Record adalah kita bisa memasukkan banyak data dengan tipe berbeda seperti itu.
+
+![](attachments/Pasted%20image%2020251001234950.png)
+
+### Langkah 3
+
+Fungsi `tukar()` bekerja dengan menerima *tuple* yang dikonversi ke Record pada parameter. Saat diterima, nilai parameter `record`  dimasukkan ke tuple a dan b. Kemudian urutan return tuple ini dibalik.
+
+![](attachments/Pasted%20image%2020251001235529.png)
+
+### Langkah 4
+
+Kode ini menunjukkan cara memberi nilai sebuah Record.
+
+![](attachments/Pasted%20image%2020251001235844.png)
+
+### Langkah 5
+
+![](attachments/Pasted%20image%2020251001235952.png)
+
+![](attachments/Pasted%20image%2020251002000041.png)
+
+Pemanggilan nilai Record dengan tanda `$` berguna untuk memanggil berdasarkan indeks. Kita juga dapat memanggil elemen Record dengan key-nya langsung.

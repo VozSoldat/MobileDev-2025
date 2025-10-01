@@ -1,29 +1,26 @@
 main() {
-  var list1 = [1, 2, null];
-  print(list1);
-  var list3 = [0, ...?list1];
-  print(list3.length);
+  var record = ('first', a: 2, b: true, 'last');
+  print(record);
 
-  var nimKu = <String>{'2341720183'};
-  var nims = <String>{...nimKu};
-  print(nims);
+  int pertama = 9;
+  int kedua = 10;
 
-  bool promoActive = false;
-  var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
-  print(nav);
+  var hasil = tukar((pertama, kedua));
+  print(hasil);
 
-  var login = 'Admin';
-  var nav2 = [
-    'Home',
-    'Furniture',
-    'Plants',
-    if (login case 'Manager') 'Inventory',
-    if (login case 'Admin') 'User Management',
-  ];
-  print(nav2);
+  // Record type annotation in a variable declaration:
+  (String, int) mahasiswa = ('Erril', 2341720183);
+  print(mahasiswa);
 
-  var listOfInts = [1, 2, 3];
-  var listOfStrings = ['#0', for (var i in listOfInts) '#$i'];
-  assert(listOfStrings[1] == '#1');
-  print(listOfStrings);
+  var mahasiswa2 = ('Erril', a: 2341720183, b: true, 'last');
+
+  print(mahasiswa2.$1); // Prints 'first'
+  print(mahasiswa2.a); // Prints 2
+  print(mahasiswa2.b); // Prints true
+  print(mahasiswa2.$2); // Prints 'last'
+}
+
+(int, int) tukar((int, int) record) {
+  var (a, b) = record;
+  return (b, a);
 }
