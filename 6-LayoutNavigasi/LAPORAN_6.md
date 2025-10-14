@@ -1,4 +1,4 @@
-# Laporan Praktikum 5
+# Laporan Praktikum 6
 
 - Nama: Muhammad Erril Putra Pratidina
 - NIM: 2341720183
