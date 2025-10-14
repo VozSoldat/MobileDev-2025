@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout: Nama dan NIM Anda',
       home: Scaffold(
-        body: Column(children: [titleSection, buttonSection, textSection]),
+        body: ListView(children: [Image.asset('images/matos.jpg', width: 600, height: 240, fit: BoxFit.cover), titleSection, buttonSection, textSection]),
       ),
     );
   }
