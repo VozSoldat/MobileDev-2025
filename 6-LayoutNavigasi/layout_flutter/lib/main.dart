@@ -51,15 +51,23 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Carilah teks di internet yang sesuai '
+        'dengan foto atau tempat wisata yang ingin '
+        'Anda tampilkan. '
+        'Tambahkan nama dan NIM Anda sebagai '
+        'identitas hasil pekerjaan Anda. '
+        'Selamat mengerjakan 🙂.',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Nama dan NIM Anda',
       home: Scaffold(
-        body: Column(
-          children: [
-            titleSection,
-            buttonSection
-          ],
-        )
+        body: Column(children: [titleSection, buttonSection, textSection]),
       ),
     );
   }
