@@ -225,3 +225,5 @@ void dispose() {
 ### Langkah 14: Hasil
 
 Lakukan Hot restart (**bukan** hot reload) pada aplikasi Flutter Anda. Anda akan melihat tampilan akhir seperti gambar berikut. Jika masih terdapat error, silakan diperbaiki hingga bisa running.
+
+![](attachments/Screen%20Recording%202025-12-18%20000825.gif)
