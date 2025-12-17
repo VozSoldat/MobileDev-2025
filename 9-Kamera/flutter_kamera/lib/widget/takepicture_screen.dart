@@ -35,7 +35,7 @@ class TakePictureScreenState extends State<TakePictureScreen> {
     // return Container();
 
     var scaffold = Scaffold(
-      appBar: AppBar(title: const Text('Take a picture - 2341720183')),
+      appBar: AppBar(title: const Text('Take a picture - Muhammad Erril Putra Pratidina - 2341720183')),
       body: FutureBuilder<void>(
         future: _initializeControllerFuture,
         builder: (context, snapshot) {
