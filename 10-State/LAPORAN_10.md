@@ -6,11 +6,12 @@
 ---
 
 ## Praktikum 1: Dasar State dengan Model-View
+### Langkah-Langkah
 
-### Langkah 1: Buat Project Baru
+#### Langkah 1: Buat Project Baru
 
 ![](attachments/Pasted%20image%2020251217233849.png)
-### Langkah 2: Membuat model **`task.dart`**
+#### Langkah 2: Membuat model **`task.dart`**
 
  Di folder model, buat file bernama `task.dart` dan buat `class Task`. Class ini memiliki atribut `description` dengan tipe data String dan `complete` dengan tipe data Boolean, serta ada konstruktor. Kelas ini akan menyimpan data tugas untuk aplikasi kita. 
 
@@ -26,7 +27,7 @@ class Task {
 }
 ```
 
-### Langkah 3: Buat file `plan.dart`
+#### Langkah 3: Buat file `plan.dart`
 
 Buat file `plan.dart` di dalam folder **models**
 
@@ -41,7 +42,7 @@ class Plan {
 
 ```
 
-### Langkah 4: Buat file `data_layer.dart`
+#### Langkah 4: Buat file `data_layer.dart`
 
 Buat file bernama `data_layer.dart` di folder **models**.
 
@@ -50,7 +51,7 @@ export 'plan.dart';
 export 'task.dart';
 ```
 
-### Langkah 5: Pindah ke file `main.dart`
+#### Langkah 5: Pindah ke file `main.dart`
 
 ```dart
 import 'package:flutter/material.dart';
@@ -71,7 +72,7 @@ class MasterPlanApp extends StatelessWidget {
 }
 ```
 
-### Langkah 6: buat **`plan_screen.dart`**
+#### Langkah 6: buat **`plan_screen.dart`**
 
 
 ```dart
@@ -100,7 +101,7 @@ class _PlanScreenState extends State<PlanScreen> {
 }
 ```
 
-### Langkah 7: buat method `_buildAddTaskButton()`
+#### Langkah 7: buat method `_buildAddTaskButton()`
 
 Aambah kode berikut di bawah method `build` di dalam `class _PlanScreenState`.
 
@@ -120,7 +121,7 @@ Aambah kode berikut di bawah method `build` di dalam `class _PlanScreenState`
 }
 ```
 
-### Langkah 8: buat widget **`_buildList()`**
+#### Langkah 8: buat widget **`_buildList()`**
 
 Kita akan buat widget berupa `List` yang dapat dilakukan scroll, yaitu `ListView.builder`. Buat widget `ListView` seperti kode berikut ini.
 
@@ -134,7 +135,7 @@ Widget _buildList() {
 }
 ```
 
-### Langkah 9: buat widget **`_buildTaskTile`**
+#### Langkah 9: buat widget **`_buildTaskTile`**
 
 
 
@@ -174,7 +175,7 @@ Widget _buildTaskTile(Task task, int index) {
 
 
 
-### Langkah 10: Tambah Scroll Controller
+#### Langkah 10: Tambah Scroll Controller
 
 Anda dapat menambah tugas sebanyak-banyaknya, menandainya jika sudah beres, dan melakukan scroll jika sudah semakin banyak isinya. Namun, ada salah satu fitur tertentu di iOS perlu kita tambahkan. Ketika keyboard tampil, Anda akan kesulitan untuk mengisi yang paling bawah. Untuk mengatasi itu, Anda dapat menggunakan `ScrollController` untuk menghapus focus dari semua `TextField` selama event scroll dilakukan. Pada file `plan_screen.dart`, tambahkan variabel scroll controller di class State tepat setelah variabel `plan`.
 
@@ -182,7 +183,7 @@ Anda dapat menambah tugas sebanyak-banyaknya, menandainya jika sudah beres, dan 
 late ScrollController scrollController;
 ```
 
-### Langkah 11: Tambah Scroll Listener
+#### Langkah 11: Tambah Scroll Listener
 
 Tambahkan method `initState()` setelah deklarasi variabel `scrollController` seperti kode berikut.
 
@@ -197,7 +198,7 @@ void initState() {
 }
 ```
 
-### Langkah 12: Tambah controller dan keyboard behavior
+#### Langkah 12: Tambah controller dan keyboard behavior
 
 Tambahkan controller dan keyboard behavior pada ListView di method `_buildList` seperti kode berikut ini.
 
@@ -210,7 +211,7 @@ return ListView.builder(
           : ScrollViewKeyboardDismissBehavior.manual,
 ```
 
-### Langkah 13: Terakhir, tambah method dispose()
+#### Langkah 13: Terakhir, tambah method dispose()
 
 Terakhir, tambahkan method `dispose()` berguna ketika widget sudah tidak digunakan lagi.
 
@@ -222,8 +223,40 @@ void dispose() {
 }
 ```
 
-### Langkah 14: Hasil
+#### Langkah 14: Hasil
 
 Lakukan Hot restart (**bukan** hot reload) pada aplikasi Flutter Anda. Anda akan melihat tampilan akhir seperti gambar berikut. Jika masih terdapat error, silakan diperbaiki hingga bisa running.
 
 ![](attachments/Screen%20Recording%202025-12-18%20000825.gif)
+
+### Tugas Praktikum
+
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file `README.md`! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki.
+2. Jelaskan maksud dari langkah 4 pada praktikum tersebut! Mengapa dilakukan demikian?
+3. Mengapa perlu variabel plan di langkah 6 pada praktikum tersebut? Mengapa dibuat konstanta ?
+4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+5. Apa kegunaan method pada Langkah 11 dan 13 dalam _lifecyle state_ ?
+6. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !
+
+#### Jawaban
+
+1. [Di sini.](LAPORAN_10.md#Langkah-Langkah)
+2. Kita membuat `data_layer.dart` yang berisi
+	
+	```dart
+	export 'plan.dart';
+	export 'task.dart';
+	```
+	
+	Ini adalah cara untuk mengelompokkan referensi dependensi jadi satu. File yang memerlukan kedua package ini nanti hanya akan mengimport `data_layer.dart` saja, membuat penulisan dependency lebih pendek.
+	
+	```dart
+	import '../models/data_layer.dart';
+	```
+
+1. Variabel `plan` itu merupakan *property*, yaitu variabel tingkat class. Lifecycle-nya mengikuti lifecycle dari class-nya, sehingga cocok untuk kasus di mana data isi variabel harus terus hidup sepanjang aplikasi, bukan pada proses method tertentu. Selain itu, method-method pada class tersebut dapat menggunakan variabel yang sama jika variabel tersebut di-cache ke bentuk property. 
+	
+	Variabel ini diberi `const` karena nilai intance nya tidak boleh berubah.
+	
+2.  ![](attachments/Screen%20Recording%202025-12-18%20000825.gif)
+3. Method `initState()` digunakan untuk menginisialisasi instance controller dan semua kebutuhan State pada aplikasi dimulai. Method `dispose()` digunakan untuk menghapus referensi objek yang seharusnya ikut dihapus ketika State mati/ditutup. Dengan menghapus referensi, garbage collector dart kemudian dapat menghapus instance dari objek tersebut.
