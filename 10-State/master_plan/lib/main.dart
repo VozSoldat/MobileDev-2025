@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:master_plan/models/data_layer.dart';
 import 'package:master_plan/providers/plan_provider.dart';
 import 'package:master_plan/views/plan_creator_screen.dart';
+import 'package:master_plan/views/plan_screen.dart';
 
 void main() => runApp(MasterPlanApp());
 

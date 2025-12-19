@@ -26,7 +26,15 @@ class _PlanScreenState extends State<PlanScreen> {
       body: ValueListenableBuilder<List<Plan>>(
         valueListenable: plansNotifier,
         builder: (context, plans, child) {
-          Plan currentPlan = plans.firstWhere((p) => p.name == plan.name);
+          if (plans.isEmpty) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          final currentPlan = plans.firstWhere(
+            (p) => p.name == plan.name,
+            orElse: () => plan,
+          );
+
           return Column(
             children: [
               Expanded(child: _buildList(currentPlan)),
@@ -71,7 +79,6 @@ class _PlanScreenState extends State<PlanScreen> {
         FocusScope.of(context).requestFocus(FocusNode());
       });
   }
-
 
   Widget _buildList(Plan plan) {
     return ListView.builder(
